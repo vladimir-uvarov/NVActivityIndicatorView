@@ -52,7 +52,7 @@ enum NVActivityIndicatorShape {
             let center = CGPoint(x: size.width / 2, y: size.height / 2)
             let fromColor = UIColor(colorLiteralRed: 255.0 / 255.0, green: 216.0 / 255.0, blue: 0.0 / 255.0, alpha: 0.0)
             let endColor = UIColor(colorLiteralRed: 216.0 / 255.0, green: 0.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
-            let circleLayer = WCGraintCircleLayer(bounds: rect, position: center, fromColor: fromColor, toColor: endColor, linewidth: 2.0, toValue: 1)
+            let circleLayer = WCGraintCircleLayer(bounds: rect, position: center, fromColor: fromColor, toColor: endColor, linewidth: NVActivityIndicatorView.DEFAULT_LINE_WIDTH, toValue: 1)
             circleLayer.backgroundColor = nil
             return circleLayer
         case .circle:

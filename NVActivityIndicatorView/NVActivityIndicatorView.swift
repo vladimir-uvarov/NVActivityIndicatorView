@@ -351,6 +351,9 @@ public final class NVActivityIndicatorView: UIView {
     /// Default padding. Default value is 0.
     public static var DEFAULT_PADDING: CGFloat = 0
 
+    /// Default padding. Default value is 0.
+    public static var DEFAULT_LINE_WIDTH: CGFloat = 4.0
+    
     /// Default size of activity indicator view in UI blocker. Default value is 60x60.
     public static var DEFAULT_BLOCKER_SIZE = CGSize(width: 60, height: 60)
 
