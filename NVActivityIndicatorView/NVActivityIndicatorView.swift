@@ -89,6 +89,12 @@ public enum NVActivityIndicatorType: Int {
      */
     case ballClipRotate
     /**
+     MuzisBallClipRotate.
+     
+     - returns: Instance of NVActivityIndicatorAnimationMuzisBallClipRotate.
+     */
+    case muzisBallClipRotate
+    /**
      SquareSpin.
 
      - returns: Instance of NVActivityIndicatorAnimationSquareSpin.
@@ -269,6 +275,8 @@ public enum NVActivityIndicatorType: Int {
             return NVActivityIndicatorAnimationBallGridPulse()
         case .ballClipRotate:
             return NVActivityIndicatorAnimationBallClipRotate()
+        case .muzisBallClipRotate:
+            return NVActivityIndicatorAnimationMuzisBallClipRotate()
         case .squareSpin:
             return NVActivityIndicatorAnimationSquareSpin()
         case .ballClipRotatePulse:

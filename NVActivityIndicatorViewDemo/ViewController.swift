@@ -35,7 +35,7 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor(red: CGFloat(237 / 255.0), green: CGFloat(85 / 255.0), blue: CGFloat(101 / 255.0), alpha: 1)
-
+        
         let cols = 4
         let rows = 8
         let cellWidth = Int(self.view.frame.width / CGFloat(cols))
@@ -70,12 +70,15 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
                              for: UIControlEvents.touchUpInside)
             self.view.addSubview(button)
         }
+        
     }
 
     func buttonTapped(_ sender: UIButton) {
         let size = CGSize(width: 30, height: 30)
 
-        startAnimating(size, message: "Loading...", type: NVActivityIndicatorType(rawValue: sender.tag)!)
+        startAnimating(size, message: "Loading...", type: NVActivityIndicatorType.muzisBallClipRotate)
+        
+        //startAnimating(size, message: "Loading...", type: NVActivityIndicatorType(rawValue: sender.tag)!)
 
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
             NVActivityIndicatorPresenter.sharedInstance.setMessage("Authenticating...")
